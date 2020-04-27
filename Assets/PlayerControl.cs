@@ -23,7 +23,7 @@ public class PlayerControl : MonoBehaviour
         m_HasInput = input.magnitude != 0;
 
         float targetAngleY = 90 - Mathf.Atan2(dir.z, dir.x) * Mathf.Rad2Deg;
-        curAngleY = Mathf.Lerp(curAngleY, targetAngleY, 0.2f);
+        curAngleY = Mathf.Lerp(curAngleY, targetAngleY, 0.1f);
     }
 
     private void FixedUpdate()
